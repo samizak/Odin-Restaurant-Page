@@ -1,0 +1,12 @@
+{
+  "name": "Odin-Restaurant-Page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/samizak/Odin-Restaurant-Page.git",
+  "author": "Sami Zakir Ahmed",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

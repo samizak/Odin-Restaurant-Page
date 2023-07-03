@@ -14,14 +14,14 @@ export default function createHeader() {
   const menuContact = document.createElement("a");
 
   menuHome.textContent = "HOME";
-  menuOurMenu.textContent = " MENU";
+  menuOurMenu.textContent = "MENU";
   menuContact.textContent = "CONTACT";
 
   menu.setAttribute("class", "navbar");
-  menuHome.classList.add("menu-item");
+  menuHome.classList.add("header-menu-item");
   menuHome.classList.add("selected");
-  menuOurMenu.classList.add("menu-item");
-  menuContact.classList.add("menu-item");
+  menuOurMenu.classList.add("header-menu-item");
+  menuContact.classList.add("header-menu-item");
 
   menuHome_li.append(menuHome);
   menuOurMenu_li.append(menuOurMenu);

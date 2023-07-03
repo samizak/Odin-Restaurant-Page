@@ -106,7 +106,7 @@ main h3 {
   background-color: black;
 }
 
-.navbar .menu-item {
+.navbar .header-menu-item {
   font-weight: 500px;
   letter-spacing: 0.15em;
   margin: 0 15px;
@@ -118,11 +118,11 @@ main h3 {
   cursor: pointer;
 }
 
-.menu-item {
+.header-menu-item {
   padding: 15px 20px;
 }
 
-.menu-item::before {
+.header-menu-item::before {
   content: "";
   position: absolute;
   display: block;
@@ -135,8 +135,8 @@ main h3 {
   transition: transform 0.3s ease;
 }
 
-.menu-item:hover::before,
-.selected.menu-item:before {
+.header-menu-item:hover::before,
+.selected.header-menu-item:before {
   transform: scaleX(1);
 }
 
@@ -233,6 +233,7 @@ footer {
   font-size: 1.3rem;
   padding: 15px;
   position: static;
+  font-weight: bold;
 }
 
 html,
@@ -240,4 +241,33 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+section {
+  min-height: 86vh;
+  padding: 2rem 10rem;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  background-color: var(--bg-cover-color);
+}
+
+.menu-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.menu-hr {
+  border: 1px solid #c59d5f;
+}
+
+hr {
+  width: 280px;
+  border: 2px solid #c59d5f;
+  margin: 24px auto;
+}
+
+.menu-item {
+  max-width: 600px;
 }

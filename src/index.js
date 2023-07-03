@@ -1,15 +1,17 @@
 import "./css/main.css";
 import createHeader from "./section/header";
 import createHome from "./section/home";
+import createMenu from "./section/menu";
 import createContact from "./section/contact";
 import createFooter from "./section/footer";
 
 const content = document.getElementById("content");
 
-// content.append(createHeader(), createHome());
 content.append(createHeader(), createHome(), createFooter());
+const menuItems = document.querySelectorAll(".header-menu-item");
 
-const menuItems = document.querySelectorAll(".menu-item");
+let menuBtn = document.getElementById("menuBtn");
+let contactBtn = document.getElementById("contactBtn");
 
 function setActiveMenu(newActive) {
   const currentActive = document.getElementsByClassName("selected");
@@ -24,6 +26,7 @@ menuItems.forEach((menuItem) => {
 
     switch (e.target.textContent) {
       case "MENU":
+        content.replaceChild(createMenu(), content.childNodes[1]);
         break;
 
       case "CONTACT":
@@ -34,6 +37,13 @@ menuItems.forEach((menuItem) => {
         content.replaceChild(createHome(), content.childNodes[1]);
     }
   });
+});
+
+console.log(menuBtn);
+
+menuBtn.addEventListener("click", () => {
+  setActiveMenu(menuItems[1]);
+  content.replaceChild(createMenu(), content.childNodes[1]);
 });
 
 contactBtn.addEventListener("click", () => {

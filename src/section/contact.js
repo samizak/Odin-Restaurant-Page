@@ -89,7 +89,5 @@ export default function createContact() {
   addressDiv.append(createLogo(), infos);
   main.append(addressDiv, form);
 
-  console.log(main);
-
   return main;
 }

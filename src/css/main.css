@@ -139,3 +139,90 @@ main h3 {
 .selected.menu-item:before {
   transform: scaleX(1);
 }
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+#address {
+  grid-area: address;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+#contactForm {
+  padding: 5rem 2rem;
+  grid-area: form;
+  display: grid;
+}
+
+#address,
+#contactForm {
+  background-color: var(--bg-cover-color);
+}
+
+label {
+  min-width: 4rem;
+  text-align: right;
+  grid-area: label;
+}
+input {
+  height: 2rem;
+}
+input,
+textarea {
+  grid-area: field;
+  padding: 1rem 1rem;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-us-title {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-field input,
+textarea {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.form-submit-btn {
+  margin-top: 10px;
+}
+
+.form-submit-btn button {
+  width: 10rem;
+  padding: 8px 22px;
+  margin-left: 73px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  background-color: #ff9000;
+  border: 2px solid #ff9000;
+  color: white;
+}
+
+.form-submit-btn button:hover {
+  background-color: black;
+  color: #ff9000;
+}
+
+#contact-infos p {
+  font-family: "Roboto", sans-serif;
+}

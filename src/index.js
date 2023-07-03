@@ -2,11 +2,12 @@ import "./css/main.css";
 import createHeader from "./section/header";
 import createHome from "./section/home";
 import createContact from "./section/contact";
+import createFooter from "./section/footer";
 
 const content = document.getElementById("content");
 
 // content.append(createHeader(), createHome());
-content.append(createHeader(), createContact());
+content.append(createHeader(), createHome(), createFooter());
 
 const menuItems = document.querySelectorAll(".menu-item");
 

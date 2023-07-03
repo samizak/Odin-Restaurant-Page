@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Niconne;
+  src: url(../assets/fonts/Niconne-Regular.ttf);
+}
+
+:root {
+  --bg-cover-color: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../assets/images/background.avif) no-repeat center center fixed;
+  background-size: cover;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+header {
+  min-height: 10vh;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-cover-color);
+}
+
+.logo {
+  font-family: Niconne, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+main {
+  min-height: 90vh;
+  padding: 2rem 10rem;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  background-color: var(--bg-cover-color);
+}
+
+main p {
+  font-family: Niconne, sans-serif;
+  font-size: 2rem;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main h3 {
+  font-size: 1.5rem;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-btn button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  width: 12rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  transition: 300ms;
+}
+
+.home-btn #menuBtn {
+  background-color: #ff9000;
+  border: 2px solid #ff9000;
+  color: white;
+}
+
+.home-btn #menuBtn:hover {
+  background-color: black;
+  color: #ff9000;
+}
+
+.home-btn #contactBtn {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  color: white;
+}
+
+.home-btn #contactBtn:hover {
+  background-color: black;
+}
